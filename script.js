@@ -19,9 +19,13 @@ async function Search() {
        plot.textContent = data.Plot
        title.textContent = data.Title
        year.textContent = data.Year
-       genre.textContent = data.Genre
 
     }catch(error) {
         console.error("Erro tente novamente")
     }
 }
+window.document.addEventListener("keydown", function(event) {
+    if(event.key == "Enter") {
+        Search()
+    }
+})

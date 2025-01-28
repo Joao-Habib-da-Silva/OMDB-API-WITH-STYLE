@@ -6,7 +6,7 @@
     font-family: 'Poppins';
 }
 body {
-    background-color: #e76f51;
+    background-color: #003049;
 
 }
 .searchbox {
@@ -24,6 +24,7 @@ input {
 input::placeholder {
     padding-left: 10px;
 }
+
 button {
     background-color: white;
     border: none;
@@ -44,14 +45,35 @@ button:hover {
     background-color: grey;
     margin-left: 425px;
     transition: 1s ease-in-out;
-border-radius: 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+    background-color: #03045e;
+    color: white;
+}
+#right {
+    display: flex;
+    justify-content: center;
+}
+#title {
+    margin-right: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#year {
+    font-weight: 600;
 }
 #image {
     padding: 20px;
+    border-radius: 30px;
+    margin-left: 130px;
 }
-
+#plot {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 500;
+}
 #content.open {
     width: 600px;
-    background-color: grey;
     height: 700px;
 }
+ 
