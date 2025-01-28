@@ -7,6 +7,9 @@ async function Search() {
         if(!link.ok) {
             throw new Error("Erro no Fetch tente Novamente")
         }
+        if(value == '') {
+            alert("Put a name on the input")
+        }
         const data = await link.json()
         const imag = window.document.getElementById("image")
         const plot = window.document.getElementById("plot")
